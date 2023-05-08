@@ -3,36 +3,16 @@ import Hero from "@/Homepage/Hero";
 import LottieSec from "@/Homepage/LottieSec";
 import AboutUs from "@/Homepage/AboutUs";
 import OurService from "@/Homepage/OurService";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import React from "react";
 import Head from "next/head";
        const index = () => {
-            const { ref, inView } = useInView();
-            const controls = useAnimation();
           
-            React.useEffect(() => {
-              if (inView) {
-                controls.start("visible");
-              }
-            }, [controls, inView]);
-          
-            const variants = {
-              hidden: { opacity: 0, y: 50 },
-              visible: {
-                opacity: 1,
-                y: 0,
-                transition: { duration: 1, ease: "easeOut" },
-              },
-          
-            }
-  
     return ( 
       <motion.div 
-            ref={ref}
-            animate={controls}
-            initial="hidden"
-            variants={variants}
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x:0 }}
+      transition={{ duration: 2, ease:"easeInOut" }}
             className="All-Cont mx-auto isolate "
           >
           <Head>
