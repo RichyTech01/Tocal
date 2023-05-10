@@ -6,7 +6,7 @@ const Nav = () => {
         <motion.div 
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y:0 }}
-            transition={{ duration: 0.8, ease:"easeInOut" }}
+            transition={{ duration: 1.5, ease:"easeInOut" }}
             className="sticky top-0 z-50 bg-white w-full border-gray-100 py-3 px-1 md:p-8"
        >
         <nav className="nav-Container flex mx-auto justify-between ">

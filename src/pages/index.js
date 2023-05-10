@@ -3,6 +3,7 @@ import Hero from "@/Homepage/Hero";
 import LottieSec from "@/Homepage/LottieSec";
 import AboutUs from "@/Homepage/AboutUs";
 import OurService from "@/Homepage/OurService";
+import GrowBus from "@/Homepage/GrowBus";
 import { motion } from "framer-motion";
 import React from "react";
 import Head from "next/head";
@@ -10,9 +11,9 @@ import Head from "next/head";
           
     return ( 
       <motion.div 
-      initial={{ opacity: 0, x: -100 }}
-      animate={{ opacity: 1, x:0 }}
-      transition={{ duration: 2, ease:"easeInOut" }}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y:0 }}
+      transition={{ duration: 0.8, ease:"easeInOut" }}
             className="All-Cont mx-auto isolate "
           >
           <Head>
@@ -23,6 +24,7 @@ import Head from "next/head";
               <LottieSec/>
               <AboutUs/>
               <OurService/>
+              <GrowBus/>
       </motion.div>
           
      );

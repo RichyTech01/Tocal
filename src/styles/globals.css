@@ -9,7 +9,6 @@ body{
 }
 .All-Cont{
     max-width: 95%;
-    height: 100vh;
 }
 .nav-Container{
     display: flex;
