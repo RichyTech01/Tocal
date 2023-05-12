@@ -6,8 +6,8 @@ const Nav = () => {
         <motion.div 
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y:0 }}
-            transition={{ duration: 1.5, ease:"easeInOut" }}
-            className="sticky top-0 z-50 bg-white w-full border-gray-100 py-3 px-1 md:p-8"
+            transition={{ duration: 0.8, ease:"easeInOut" }}
+            className="mb-4 sm:mb-0 sticky top-0 z-50 bg-white w-full border-gray-100 py-3 px-1 md:p-8"
        >
         <nav className="nav-Container flex mx-auto justify-between ">
             <div className="flex items-center">
@@ -23,8 +23,8 @@ const Nav = () => {
                     <a href="" className="visited:mb-4 hover:underline">Contact</a>
                 </li>
             <motion.div
-                whileHover={{ scale: 0.9 }}
-                whileTap={{ scale: 0.9 }} 
+              initial={{scale:0.9}}
+              animate={{scale:0.9}}
                 className="hidden lg:block transition duration-500 ease-in-out"
             >
                 <a href="" className="Book-Flight-btn  flex items-center text-white font-meduim hover:bg-white hover:text-blue-600 transition ease-in-out duration-500 hover:shadow-lg">Book a Free Pilot <span className="ml-3 arrow top-0  transform -translate-x-1/2 transform-origin-center animate-arrow-animation">→</span></a>

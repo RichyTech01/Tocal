@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 body{
     background: #FDFDFD;
     max-width: 100%;
@@ -25,7 +29,6 @@ body{
     width: 35px;
 }
 .Book-Flight-btn{
-    box-sizing: border-box;
     padding: 1rem 1.5rem;
     width: 12.5625rem;
     height: 52px;
@@ -35,7 +38,7 @@ body{
 }
 @keyframes arrow-animation {
     0% {
-      transform: rotate(0deg);
+      transform: rotate(10deg);
     }
   }
   
@@ -101,13 +104,9 @@ body{
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
   }
-  
-.FS36{
-    font-size: 2.25rem;
-}
+
 .cards{
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.05);
     padding: 30px;
-    height: 100;
     @apply bg-white rounded overflow-hidden relative hover:shadow-xl hover:transition hover:duration-500 duration-500 ease-in-out ; 
 } 

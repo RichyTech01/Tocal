@@ -3,18 +3,18 @@ import Hero from "@/Homepage/Hero";
 import LottieSec from "@/Homepage/LottieSec";
 import AboutUs from "@/Homepage/AboutUs";
 import OurService from "@/Homepage/OurService";
-import GrowBus from "@/Homepage/GrowBus";
-import { motion } from "framer-motion";
 import React from "react";
 import Head from "next/head";
+import { motion } from "framer-motion";
        const index = () => {
-          
+       
+  
     return ( 
       <motion.div 
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y:0 }}
-      transition={{ duration: 0.8, ease:"easeInOut" }}
-            className="All-Cont mx-auto isolate "
+      transition={{ duration: 0.8, ease:"easeInOut" }} 
+            className="All-Cont mx-auto isolate max-w-[600px] w-[95%]"
           >
           <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,7 +24,6 @@ import Head from "next/head";
               <LottieSec/>
               <AboutUs/>
               <OurService/>
-              <GrowBus/>
       </motion.div>
           
      );
