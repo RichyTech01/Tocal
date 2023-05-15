@@ -1,8 +1,10 @@
-import Nav from "@/Homepage/Nav";
-import Hero from "@/Homepage/Hero";
-import LottieSec from "@/Homepage/LottieSec";
-import AboutUs from "@/Homepage/AboutUs";
-import OurService from "@/Homepage/OurService";
+import Nav from "@/Components/Homepage/Nav";
+import Hero from "@/Components/Homepage/Hero";
+import LottieSec from "@/Components/Homepage/LottieSec";
+import AboutUs from "@/Components/Homepage/AboutUs";
+import OurService from "@/Components/Homepage/OurService";
+import GrowBus from "@/Components/Homepage/GrowBus";
+import ServeThem from "@/Components/Homepage/ServeThem";
 import React from "react";
 import Head from "next/head";
 import { motion } from "framer-motion";
@@ -13,7 +15,7 @@ import { motion } from "framer-motion";
       <motion.div 
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y:0 }}
-      transition={{ duration: 0.8, ease:"easeInOut" }} 
+      transition={{ duration: 0.7, ease:"easeInOut" }} 
             className="All-Cont mx-auto isolate max-w-[600px] w-[95%]"
           >
           <Head>
@@ -24,6 +26,8 @@ import { motion } from "framer-motion";
               <LottieSec/>
               <AboutUs/>
               <OurService/>
+              <GrowBus/>
+              <ServeThem/>
       </motion.div>
           
      );

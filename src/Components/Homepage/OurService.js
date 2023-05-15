@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 const OurService = () => {
     return ( 
-        <div className="transition duration-700 ease-in-out mt-20 md:mt-28 max-w-[1440px] w-[95%] justify-center mx-auto h-[100%] space-y-16">
+        <div className="transition duration-700 ease-in-out mt-20 md:mt-28 max-w-[1440px] w-[95%] justify-center mx-auto h-[100%] space-y-10">
         <div className="space-y-3">
             <p className=" text-base leading-[100%] flex justify-center font-medium">OUR SERVICES</p>
             <p className="text-3xl md:text-4xl justify-center flex ">You&nbsp;<span className="text-blue-700"> select,&nbsp;</span> we <span className="text-blue-700 "> &nbsp;collect</span></p>
@@ -43,17 +43,21 @@ const OurService = () => {
         </div>
         <div className="flex mx-auto gap-4 max-w-[338px] w-[95%] h-[100%]">
             <motion.button
-             className="border border-pink-600 w-[130px] h-[49px] rounded-[60px] text-base font-medium hover:bg-pink-600 hover:text-white">
+            whileHover={{scale:0.9}}
+            whileTap={{scale:0.8}}
+             className="border border-pink-600 w-[130px] h-[49px] rounded-[60px] text-base font-medium hover:bg-pink-600 hover:text-white  transition ease-in-out duration-500">
                Learn More
             </motion.button>
 
             <motion.button
+            whileHover={{scale:0.9}}
+            whileTap={{scale:0.8}}
              className="w-[192px] h-[49px] bg-blue-600 rounded-[60px] border border-blue-600 flex px-[24px] items-center text-white font-meduim py-[16px] hover:bg-white hover:text-blue-600 transition ease-in-out duration-500 hover:shadow-lg">
                 Get a free quote →
             </motion.button>
         </div>
         <div className="mx-auto md:w-[95%] md:max-w-[1300px] ">
-            <img src="OurSer.png" className="mt-20  justify-center flex "/>
+            <img src="OurSer.png" className="md:mt-32 mt-20   justify-center flex "/>
         </div>
         </div>
      );

@@ -11,6 +11,24 @@ body{
     max-width: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
+.scrollbar-hidden::-webkit-scrollbar{
+    overflow: hidden;
+}
+.animate-scroll{
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 .All-Cont{
     max-width: 95%;
 }
@@ -36,25 +54,10 @@ body{
     border: 1px solid #005CE5;
     border-radius: 60px;
 }
-@keyframes arrow-animation {
-    0% {
-      transform: rotate(10deg);
-    }
-  }
-  
-  .animate-arrow-animation {
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-name: arrow-animation;
-    animation-timing-function: ease;
-}
+
   
 .First-HomePage-Article{
-    position: relative;
-    gap: 2rem;
     max-width: 81.375rem;
-    height: 17rem;
-    top: 160px;
 }
 .Making-hyperlocal{
     line-height: 110%;
@@ -77,21 +80,16 @@ body{
 }
 .First-Button-Contact{
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
     line-height: 20px;
     border:1px solid #EA2FA6;
-    padding: 16px 24px;
+    padding: 1rem 1.5rem;
     border-radius: 60px;
 }
 .Second-Button-Learn{
     border: 1px solid #005CE5;
-    padding: 16px 24px;
+    padding: 1rem 1.5rem;
     gap: 10px;
-    width: 159px;
-    height: 52px;
     font-style: normal;
-    font-weight: 500;
     line-height: 20px;
     color: #FDFDFD;
 }

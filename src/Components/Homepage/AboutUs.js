@@ -19,8 +19,8 @@ const AboutUs = () => {
            
         </div>
         <div className=" w-[95%] max-w-[1171px] mx-auto relative h-[100%]">
-                <button className="abUsBtn bg-blue-700 border border-blue-700 justify-center rounded-[60px] w-[143px] h-[52px] flex items-center text-white font-meduim hover:bg-white hover:text-blue-600 transition ease-in-out duration-500 hover:shadow-lg ">
-                    AboutUs <span className="ml-3 arrow top-0  transform -translate-x-1/2 transform-origin-center animate-arrow-animation">→</span>
+                <button className="abUsBtn bg-blue-700 border border-blue-700 justify-center rounded-[60px] w-[143px] h-[52px] flex items-center text-white font-meduim hover:bg-white hover:text-blue-600 transition ease-in-out duration-500 mt-10 lg:mt-0  hover:shadow-lg ">
+                    AboutUs →
                 </button>
         </div>
         </div>
