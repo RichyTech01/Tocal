@@ -1,6 +1,13 @@
 import React from "react";
+import { useState } from "react";
+import Menu from "../Drop/Menu";
 import { motion } from "framer-motion";
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  }
 
     return ( 
         <motion.div 
@@ -30,9 +37,14 @@ const Nav = () => {
             >
                 <a href="" className="Book-Flight-btn  flex items-center text-white font-meduim hover:bg-white hover:text-blue-600 transition ease-in-out duration-500 hover:shadow-lg">Book a Free Pilot →</a>
             </motion.div>
-            <button id="mobile-open-button" className="text-4xl lg:hidden focus:outline-none">
+            <div>
+            <button onClick={toggleMenu} id="mobile-open-button" className="text-4xl lg:hidden focus:outline-none">
                 &#9776;
             </button>
+            {isOpen && (
+            <Menu/>
+            )}
+            </div>
             </div>
         </nav>
         </motion.div>
